@@ -1,0 +1,16 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+home:
+    path: /
+    controller: App\Controller\HomeController::index
+
+rest_routes:
+    prefix: /api/v1
+    resource: routes/rest_routes.yaml
+
+# meeting_note:
+#     type: rest
+#     # host: m.example.com
+#     resource: App\Controller\MeetingNoteController

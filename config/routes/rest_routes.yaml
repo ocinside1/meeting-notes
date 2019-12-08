@@ -1,0 +1,17 @@
+meeting_note_get:
+    path:  /meeting-note/{id}
+    controller: App\Controller\MeetingNoteController:getAction
+    methods: GET
+    requirements:
+        id: \d+
+
+meeting_note_post:
+    path:  /meeting-note
+    controller: App\Controller\MeetingNoteController:postAction
+    methods: POST
+    
+# meeting_note:
+#     name_prefix: meeting_note_
+#     prefix: /meeting-note
+#     type: rest
+#     resource: App\Controller\MeetingNoteController
